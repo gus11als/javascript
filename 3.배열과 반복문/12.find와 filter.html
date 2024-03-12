@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let users = [
+    {id: 1, name: "John"},
+    {id: 2, name: "Pete"},
+    {id: 3, name: "Mary"}
+    ];
+
+    let user = users.find(item => item.id == 1);
+
+    alert(user.name); // John
+
+    let users2 = [
+    {id: 1, name: "John"},
+    {id: 2, name: "Pete"},
+    {id: 3, name: "Mary"}
+  ];
+
+    // 앞쪽 사용자 두 명을 반환합니다.
+    let someUsers = users2.filter(item => item.id < 3);
+
+    alert(someUsers.length); // 2
+    
+    </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

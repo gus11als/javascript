@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    alert( true && true );   // true
+    alert( false && true );  // false
+    alert( true && false );  // false
+    alert( false && false ); // false
+
+    let hour = 12;
+    let minute = 30;
+
+    if (hour == 12 && minute == 30) {
+    alert( '현재 시각은 12시 30분입니다.' );
+    }
+
+    if (1 && 0) { // 피연산자가 숫자형이지만 논리형으로 바뀌어 true && false가 됩니다.
+    alert( "if 문 안에 falsy가 들어가 있으므로 alert창은 실행되지 않습니다." );
+    }
+
+    alert( !true ); // false
+    alert( !0 ); // true
+
+    alert( !!"non-empty string" ); // true
+    alert( !!null ); // false
+</script>
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

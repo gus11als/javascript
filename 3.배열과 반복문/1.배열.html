@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let arr1 = new Array();
+    let arr2 = [];
+    //위 두방법은 빈 배열생성방법(둘다 따로따로임)
+
+    let fruits = ["사과", "오렌지", "자두"];
+
+    alert( fruits[0] ); // 사과
+    alert( fruits[1] ); // 오렌지
+    alert( fruits[2] ); // 자두
+
+    fruits[2] = '배'; // 배열이 ["사과", "오렌지", "배"]로 바뀜
+    fruits[3] = '레몬'; // 배열이 ["사과", "오렌지", "배", "레몬"]으로 바뀜
+
+    let fruits2 = ["사과", "오렌지", "자두"];
+
+    alert( fruits2.length ); // 3
+
+    let fruits3 = ["사과", "오렌지", "자두"];
+
+    alert( fruits3 ); // 사과,오렌지,자두
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

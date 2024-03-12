@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let arr = [ 1, 2, 15 ];
+
+    // arr 내부가 재 정렬됩니다.
+    arr.sort();
+
+    alert( arr );  // 1, 15, 2
+
+    function compareNumeric(a, b) {
+
+    if (a > b) return 1;
+    if (a == b) return 0;
+    if (a < b) return -1;
+    }
+
+    let arr2 = [ 1, 2, 15 ];
+
+    arr.sort(compareNumeric);
+
+    alert(arr2);  // 1, 2, 15
+        
+    </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

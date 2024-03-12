@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let userName = 'John';
+
+    function showMessage() {
+    let message = 'Hello, ' + userName;
+    alert(message);
+    }
+
+    showMessage(); // Hello, John
+    // // 밑은 다른방법?
+
+    // let userName2 = 'John';
+
+    // function showMessage() {
+    // userName2 = "Bob"; // (1) 외부 변수를 수정함
+
+    // let message2 = 'Hello, ' + userName2;
+    // alert(message2);
+    // }
+
+    // alert( userName2 ); // 함수 호출 전이므로 John 이 출력됨
+    // showMessage();
+    // alert( userName2 ); // 함수에 의해 Bob 으로 값이 바뀜
+
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let names = 'Bilbo, Gandalf, Nazgul';
+
+    let arr = names.split(', '); //다음으로 넘기는 부분알기
+
+    for (let name of arr) {
+    alert( `${name}에게 보내는 메시지` ); // Bilbo에게 보내는 메시지
+    }
+    
+    let arr2 = 'Bilbo, Gandalf, Nazgul, Saruman'.split(', ', 2); //처음부터 2개만 꺼내기
+    alert(arr2); // Bilbo, Gandalf
+
+    let str2 = "test";
+    alert( str2.split('') ); // t,e,s,t
+
+    let arr3 = ['Bilbo', 'Gandalf', 'Nazgul'];
+    let str3 = arr3.join(';'); // 배열 요소 모두를 ;를 사용해 하나의 문자열로 합칩니다.
+    lert( str3 ); // Bilbo;Gandalf;Nazgul
+
+    </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

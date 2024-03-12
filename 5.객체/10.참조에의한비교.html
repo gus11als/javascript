@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    
+    let a = {};
+    let b = a; // 참조에 의한 복사
+
+    alert( a == b ); // true, 두 변수는 같은 객체를 참조합니다.
+    alert( a === b ); // true
+        
+    let a2 = {};
+    let b2 = {}; // 독립된 두 객체
+
+    alert( a2 == b2 ); // false
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

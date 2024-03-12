@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+
+    // 숫자에는 아무런 영향을 미치지 않습니다.
+    let x = 1;
+    alert( +x ); // 1
+
+    let y = -2;
+    alert( +y ); // -2
+
+    // 숫자형이 아닌 피연산자는 숫자형으로 변화합니다.
+    alert( +true ); // 1
+    alert( +"" );   // 0
+
+    let apples = "2";
+    let oranges = "3";
+
+    alert( apples + oranges ); // 23, 이항 덧셈 연산자는 문자열을 연결합니다.
+
+    let apples2 = "2";
+    let oranges2 = "3";
+
+    // 이항 덧셈 연산자가 적용되기 전에, 두 피연산자는 숫자형으로 변화합니다.
+    alert( +apples2 + +oranges2 ); // 5
+
+    // `Number(...)`를 사용해서 같은 동작을 하는 코드를 작성할 수 있지만, 더 기네요.
+    // alert( Number(apples) + Number(oranges) ); // 5
+    </script>
+    
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

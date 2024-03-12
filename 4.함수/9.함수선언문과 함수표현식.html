@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    // 함수 선언문
+    function sum(a, b) {
+    return a + b;
+    }
+
+    // 함수 표현식
+    let sum = function(a, b) {
+    return a + b;
+    };
+   
+    //밑은 예시
+
+    sayHi("John"); // Hello, John
+
+    function sayHi(name) {
+    alert( `Hello, ${name}` );
+    }
+    //hello john이 출력됨
+    
+    sayHi("John"); // error!
+
+    let sayHi = function(name) {  // (*) 마술은 일어나지 않습니다. 출력x
+    alert( `Hello, ${name}` );
+    };
+
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

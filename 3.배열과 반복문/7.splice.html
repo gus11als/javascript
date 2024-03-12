@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let arr = ["I", "go", "home"];
+
+    delete arr[1]; // "go"를 삭제합니다.
+
+    alert( arr[1] ); // undefined
+
+    // delete를 써서 요소를 지우고 난 후 배열 --> arr = ["I",  , "home"];
+    alert( arr.length ); // 3
+
+    let arr2 = ["I", "study", "JavaScript"];
+
+    arr2.splice(1, 1); // 인덱스 1부터 요소 한 개를 제거 study
+
+    alert( arr2 ); // ["I", "JavaScript"]
+    alert( arr2.length ); //2개로 줄어듬
+
+    let arr3 = ["I", "study", "JavaScript", "right", "now"];
+
+    // 처음 두 개의 요소를 삭제함
+    let removed = arr3.splice(0, 2); // 0,2까지 배열삭제
+
+    alert( removed ); // "I", "study" <-- 삭제된 요소로 구성된 배열
+
+    let arr4 = ["I", "study", "JavaScript", "right", "now"];
+
+    // 처음(0) 세 개(3)의 요소를 지우고, 이 자리를 다른 요소로 대체합니다. 0부터 시작해서 3개를 삭제
+    arr4.splice(0, 3, "Let's", "dance");
+
+    alert( arr4 ) // now ["Let's", "dance", "right", "now"]
+    </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let s = "my" + "string";
+    alert(s); // mystring
+
+    alert( '1' + 2 ); // "12"
+    alert( 2 + '1' ); // "21"
+
+    alert(2 + 2 + '1' ); // '221'이 아니라 '41'이 출력됩니다.
+
+    alert( 6 - '2' ); // 4, '2'를 숫자로 바꾼 후 연산이 진행됩니다.
+    alert( '6' / '2' ); // 3, 두 피연산자가 숫자로 바뀐 후 연산이 진행됩니다.
+  </script>
+    
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

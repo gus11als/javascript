@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    function sum(a, b) {
+    return a + b;
+    }
+
+    let result = sum(1, 2);
+    alert( result ); // 3
+
+    //
+    //
+    function checkAge(age) {
+    if (age >= 18) {
+        return true;
+    } else {
+        return confirm('보호자의 동의를 받으셨나요?'); // 확인 취소 버튼이있는 메세지 출력함수인듯
+    }
+    }
+
+    let age = prompt('나이를 알려주세요', 18);
+
+    if ( checkAge(age) ) {
+    alert( '접속 허용' );
+    } else {
+    alert( '접속 차단' );
+    }
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

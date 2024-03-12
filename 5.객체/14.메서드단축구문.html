@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    // 아래 두 객체는 동일하게 동작합니다.
+
+    user = {
+    sayHi: function() {
+        alert("Hello");
+    }
+    };
+
+    // 단축 구문을 사용하니 더 깔끔해 보이네요.
+    user = {
+    sayHi() { // "sayHi: function()"과 동일합니다.
+        alert("Hello");
+    }
+    };
+        
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

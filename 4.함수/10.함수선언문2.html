@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let age = 16; // 16을 저장했다 가정합시다.
+
+if (age < 18) {
+  welcome();               // \   (실행)
+                           //  |
+  function welcome() {     //  |
+    alert("안녕!");        //  |  함수 선언문은 함수가 선언된 블록 내
+  }                        //  |  어디에서든 유효합니다
+                           //  |
+  welcome();               // /   (실행)
+
+} else {
+
+  function welcome() {
+    alert("안녕하세요!");
+  }
+}
+
+welcome(); // Error: welcome is not defined 출력x (중괄호안에 안들어가기 때문)
+
+//밑은 해결방법 함수표현식으로 바꾸면 해결가능
+
+/* let age = prompt("나이를 알려주세요.", 18);
+
+let welcome;
+
+if (age < 18) {
+
+  welcome = function() {
+    alert("안녕!");
+  };
+
+} else {
+
+  welcome = function() {
+    alert("안녕하세요!");
+  };
+
+}
+
+welcome(); // 제대로 동작합니다. */
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

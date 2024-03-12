@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let arr = [1, 0, false];
+
+    alert( arr.indexOf(0) ); // 1
+    alert( arr.indexOf(false) ); // 2
+    alert( arr.indexOf(null) ); // -1
+
+    alert( arr.includes(1) ); // true
+    
+    const arr2 = [NaN];
+    alert( arr2.indexOf(NaN) ); // -1 (완전 항등 비교 === 는 NaN엔 동작하지 않으므로 0이 출력되지 않습니다.)
+    alert( arr2.includes(NaN) );// true (NaN의 여부를 확인하였습니다.)
+    </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

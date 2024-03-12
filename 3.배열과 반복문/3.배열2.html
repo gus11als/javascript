@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let fruits = ["바나나"]
+
+    let arr = fruits; // 참조를 복사함(두 변수가 같은 객체를 참조)
+
+    alert( arr === fruits ); // true
+
+    arr.push("배"); // 참조를 이용해 배열을 수정합니다.
+
+    alert( fruits ); // 바나나,배 - 요소가 두 개가 되었습니다.
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

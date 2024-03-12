@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let user = {
+    name: "John",
+    age: 30
+    };
+
+    let clone = {}; // 새로운 빈 객체
+
+    // 빈 객체에 user 프로퍼티 전부를 복사해 넣습니다.
+    for (let key in user) {
+    clone[key] = user[key];
+    }
+
+    // 이제 clone은 완전히 독립적인 복제본이 되었습니다.
+    clone.name = "Pete"; // clone의 데이터를 변경합니다.
+
+    alert( user.name ); // 기존 객체에는 여전히 John이 있습니다.
+
+    //두번째 방법 assign
+    let user2 = { name: "John" };
+
+    let permissions1 = { canView: true };
+    let permissions2 = { canEdit: true };
+
+    // permissions1과 permissions2의 프로퍼티를 user로 복사합니다.
+    Object.assign(user2, permissions1, permissions2);
+
+    // now user2 = { name: "John", canView: true, canEdit: true }
+        
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

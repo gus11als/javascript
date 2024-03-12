@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    function showMessage(from, text) { // 인자: from, text
+    alert(from + ': ' + text);
+    }
+
+    showMessage('Ann', 'Hello!'); // Ann: Hello! (*)
+    showMessage('Ann', "What's up?"); // Ann: What's up? (**)
+    //
+    //
+    function showMessage2(from, text = "no text given") {
+    alert( from + ": " + text );
+    }
+
+    showMessage2("Ann"); // Ann: no text given
+    showMessage2("Ann", undefined); // Ann: no text given 기본값이 설정되어있어서 그대로 출력함
+
+    //
+    //
+    function showMessage3(from, text) {
+    if (text === undefined) {
+        text = 'no text given';
+    }
+
+    alert( from + ": " + text );
+    }
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

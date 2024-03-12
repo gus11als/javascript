@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    function showMessage() {
+    let message = "안녕하세요!"; // 지역 변수
+
+    alert( message );
+    }
+
+    showMessage(); // 안녕하세요!
+
+    alert( message ); // ReferenceError: message is not defined (message는 함수 내 지역 변수이기 때문에 에러가 발생합니다.)
+
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

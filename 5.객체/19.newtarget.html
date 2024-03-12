@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    function User(name) {
+    if (!new.target) { // new 없이 호출해도
+        return new User(name); // new를 붙여줍니다.
+    }
+
+    this.name = name;
+    }
+
+    let bora = User("보라"); // 'new User'를 쓴 것처럼 바꿔줍니다.
+    alert(bora.name); // 보라
+    </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>
