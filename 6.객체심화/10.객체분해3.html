@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+
+    //프로퍼티가 없는 경우를 대비하여 =을 사용해 기본값을 설정하는 것도 가능
+    let options = {
+    title: "Menu"
+    };
+
+    let {width = 100, height = 200, title} = options;
+
+    alert(title);  // Menu
+    alert(width);  // 100
+    alert(height); // 200
+    
+    let options2 = {
+    title2: "Menu"
+    };
+
+    let {width2 = prompt("width?"), title2 = prompt("title?")} = options2;
+
+    alert(title2);  // Menu
+    alert(width2);  // prompt 창에 입력한 값
+    </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    let [firstName, surname] = [];
+    alert(firstName); // undefined
+    alert(surname); // undefined
+
+    // 기본값
+    let [name2 = "Guest", surname2 = "Anonymous"] = ["Julius"]; //맨처음으로 들어감
+
+    alert(name2);    // Julius (배열에서 받아온 값)
+    alert(surname2); // Anonymous (기본값)
+    
+    // name의 prompt만 실행됨
+    let [surname3 = prompt('성을 입력하세요.'), name3 = prompt('이름을 입력하세요.')] = ["김"];
+
+    alert(surname3); // 김 (배열에서 받아온 값)
+    alert(name3);    // prompt에서 받아온 값
+    </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>

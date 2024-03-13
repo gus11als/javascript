@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>스크립트 전</p>
+
+  <script>
+    // Object.key(obj)   – 객체의 키만 담은 배열을 반환합니다.
+    // Object.values(obj) – 객체의 값만 담은 배열을 반환합니다.
+    // Object.entries(obj) – [키, 값] 쌍을 담은 배열을 반환합니다.
+
+    let user = {
+    name: "John",
+    age: 30
+    };
+
+    Object.keys(user) = ["name", "age"]
+    Object.values(user) = ["John", 30]
+    Object.entries(user) = [ ["name","John"], ["age",30] ]
+
+    let user2 = {
+    name: "Violet",
+    age: 30
+    };
+
+    // 값을 순회합니다.
+    for (let value of Object.values(user2)) { //values = 30
+    alert(value); // Violet과 30이 연속적으로 출력됨
+}
+
+  </script>
+
+  <p>스크립트 후</p>
+
+</body>
+
+</html>
